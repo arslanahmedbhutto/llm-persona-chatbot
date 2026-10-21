@@ -58,20 +58,6 @@ streamlit run app.py
 
 > Your `.env` file is listed in `.gitignore`, so your key is never committed. Never hard-code API keys in notebooks or source files.
 
-## Deploying to Streamlit Community Cloud
-
-This app is deployed at [llm-persona-chatbot.streamlit.app](https://llm-persona-chatbot.streamlit.app/). To deploy your own copy:
-
-1. Go to [share.streamlit.io](https://share.streamlit.io) and choose **Create app**.
-2. Pick this repository, branch `main`, and main file path `app.py`.
-3. Under **Advanced settings**, choose Python **3.11** and add your key in **Secrets**:
-
-   ```toml
-   OPENAI_API_KEY = "your-key-here"
-   ```
-
-4. Click **Deploy**. Without a key in Secrets, the app runs in demo mode.
-
 ## How it works
 
 ```
