@@ -2,6 +2,12 @@
 
 A Streamlit chat app with three LLM chatbots, each with its own personality defined through prompt engineering. One of them answers questions from a PDF you upload. It's built with **LangChain**, **OpenAI** and **Streamlit**.
 
+**Live demo: [llm-persona-chatbot.streamlit.app](https://llm-persona-chatbot.streamlit.app/)**
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://llm-persona-chatbot.streamlit.app/)
+
+> The live demo runs in **demo mode**: load a recorded conversation with each bot, or paste your own OpenAI API key under *Model settings* in the sidebar to chat live. Your key stays in your browser session only.
+
 ![ChefNova conversation](screenshots/chefnova.png)
 
 ## The chatbots
@@ -53,6 +59,8 @@ streamlit run app.py
 > Your `.env` file is listed in `.gitignore`, so your key is never committed. Never hard-code API keys in notebooks or source files.
 
 ## Deploying to Streamlit Community Cloud
+
+This app is deployed at [llm-persona-chatbot.streamlit.app](https://llm-persona-chatbot.streamlit.app/). To deploy your own copy:
 
 1. Go to [share.streamlit.io](https://share.streamlit.io) and choose **Create app**.
 2. Pick this repository, branch `main`, and main file path `app.py`.
